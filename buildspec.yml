@@ -3,10 +3,10 @@ phases:
   install:
     commands:
       - aws cloudformation package 
-         --template-file SethTest1MyFunction.yaml \
+         --template-file SethTest1MyFunction.yml \
          --s3-bucket savo-seth-test-1 \
-         --output-template-file NewSethTest1MyFunction.yaml
+         --output-template-file NewSethTest1MyFunction.yml
 artifacts:
   type: zip
   files:
-    - NewSethTest1MyFunction.yaml
+    - NewSethTest1MyFunction.yml
